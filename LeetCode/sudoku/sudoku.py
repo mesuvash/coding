@@ -13,7 +13,7 @@ class Sudoku:
                 if (board[rid][i] == value) and (i != colid):
                     return False
 
-            # check blockR
+            # check local block
             block_size = int(len(board) ** (0.5))
             block_col = colid // block_size
             block_row = rid // block_size
